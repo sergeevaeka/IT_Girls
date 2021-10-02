@@ -16,38 +16,55 @@
         width="150" height="150" alt="Собачка">
 
     <form>
-        <label for="petName">Кличка питомца:</label> <br />
-        <input type="text" id="petName" /> <br />
-        <label for="ownerName">Имя владельца:</label> <br />
-        <input type="text" id="ownerName" /><br />
-        <label for="contacts">Контакты владельца:</label> <br />
-        <input type="text" id="contacts" />
+        <fieldset>
+            <label for="petName">Кличка питомца:</label> <br />
+            <input type="text" id="petName" /> <br />
+            <label for="ownerName">Имя владельца:</label> <br />
+            <input type="text" id="ownerName" /><br />
+            <label for="contacts">Контакты владельца:</label> <br />
+            <input type="text" id="contacts" />
+        </fieldset>
         <br /> <br />
-        <p> Порода: </p>
-        <select>
-            <option value="first option"> Золотистый ретривер </option>
-            <option value="second option"> Йоркширский терьер </option>
-            <option value="third option"> Лабрадор </option>
-        </select>
+
+        <fieldset>
+            <p> Порода: </p>
+            <select>
+                <option value="first option"> Золотистый ретривер </option>
+                <option value="second option"> Йоркширский терьер </option>
+                <option value="third option"> Лабрадор </option>
+            </select>
+        </fieldset>
 
         <br /><br />
-        <p> Чем питается питомец: </p>
-        <input type="checkbox" name="petfood" value="1" /> Сухой корм <br />
-        <input type="checkbox" name="petfood" value="2" /> Влажный корм <br />
-        <input type="checkbox" name="petfood" value="3" /> Натуральный корм <br />
+        <fieldset>
+            <p> Чем питается питомец: </p>
+            <input type="checkbox" name="petfood" value="1" /> Сухой корм <br />
+            <input type="checkbox" name="petfood" value="2" /> Влажный корм <br />
+            <input type="checkbox" name="petfood" value="3" /> Натуральный корм <br />
+        </fieldset>
+
         <br /> <br />
-        <p> Укажите пол питомца: </p>
-        <input type="radio" name="s" value="m" /> Самец<br />
-        <input type="radio" name="s" value="f" /> Самка
+
+        <fieldset>
+            <p> Укажите пол питомца: </p>
+            <input type="radio" name="s" value="m" /> Самец<br />
+            <input type="radio" name="s" value="f" /> Самка
+        </fieldset>
         <br /> <br />
-        <textarea rows="5" cols="20">Комментарий владельца</textarea>
+
+        <fieldset>
+            <textarea rows="5" cols="20">Комментарий владельца</textarea>
+        </fieldset>
         <br /> <br />
-        <label for="file">Приложить фото питомца</label>
-        <br />
-        <br />
-        <input name="myFile" type="file" id="file" />
-        <br />
-        <input type="submit" value="Сохранить" />
+
+        <fieldset>
+            <label for="file">Приложить фото питомца</label>
+            <br />
+            <br />
+            <input name="myFile" type="file" id="file" />
+            <br />
+            <input type="submit" value="Сохранить" />
+        </fieldset>
     </form>
 </body>
 
